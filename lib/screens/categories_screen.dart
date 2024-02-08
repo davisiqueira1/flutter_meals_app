@@ -11,11 +11,11 @@ class CategoriesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
+        foregroundColor: Colors.white,
         title: const Text(
           "Lets cook?",
           style: TextStyle(
             fontSize: 24,
-            color: Colors.white,
           ),
         ),
       ),
