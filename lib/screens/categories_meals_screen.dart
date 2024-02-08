@@ -7,7 +7,14 @@ class CategoriesMealsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Recipes"),
+        backgroundColor: Theme.of(context).colorScheme.primary,
+        foregroundColor: Colors.white,
+        title: const Text(
+          "Recipes",
+          style: TextStyle(
+            fontSize: 24,
+          ),
+        ),
       ),
       body: const Center(child: Text("Categories meals screen")),
     );
