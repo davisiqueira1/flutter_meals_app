@@ -10,15 +10,18 @@ class CategoriesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         title: const Text(
           "Lets cook?",
           style: TextStyle(
+            fontSize: 24,
             color: Colors.white,
           ),
         ),
       ),
+      backgroundColor: Theme.of(context).canvasColor,
       body: GridView(
+        padding: const EdgeInsets.all(20),
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
           maxCrossAxisExtent: 200,
           childAspectRatio: 3 / 2, // (or just 1.5)
