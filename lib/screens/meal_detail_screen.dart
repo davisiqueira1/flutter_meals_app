@@ -46,6 +46,17 @@ class MealDetailScreen extends StatelessWidget {
             fontSize: 24,
           ),
         ),
+        actions: <Widget>[
+          Container(
+            margin: const EdgeInsets.only(right: 15),
+            child: IconButton(
+              icon: const Icon(Icons.favorite_outline),
+              onPressed: () {
+                Navigator.of(context).pop(meal.title);
+              },
+            ),
+          ),
+        ],
       ),
       backgroundColor: Theme.of(context).canvasColor,
       body: SingleChildScrollView(
