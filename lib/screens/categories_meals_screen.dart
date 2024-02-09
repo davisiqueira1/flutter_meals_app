@@ -28,6 +28,7 @@ class CategoriesMealsScreen extends StatelessWidget {
             ),
           ),
         ),
+        backgroundColor: Theme.of(context).canvasColor,
         body: ListView.builder(
           itemCount: categoryMeals.length,
           itemBuilder: (context, index) {

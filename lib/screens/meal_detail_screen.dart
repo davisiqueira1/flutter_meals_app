@@ -47,6 +47,7 @@ class MealDetailScreen extends StatelessWidget {
           ),
         ),
       ),
+      backgroundColor: Theme.of(context).canvasColor,
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
